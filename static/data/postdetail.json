@@ -1,0 +1,53 @@
+[
+  {
+    "detailid": 1,
+    "title": "大家好,这里好美啊，大家快来玩吧大家好,这里好美啊，大家快来玩吧大家好,这里好美啊，大家快来玩吧大家好,这里好美啊，大家快来玩吧大家好,这里好美啊，大家快来玩吧",
+    "address": "福州 高盖山",
+    "time": "2019-08-28 14:30",
+    "imageList": [
+      {
+        "imageid": 1,
+        "imagetitle": " 高盖山",
+        "imgUrl": "/static/images/fj.png"
+      }
+    ]
+  },
+  {
+    "detailid": 2,
+    "title": "大家好,这里好美啊，这里是鼓山,大家快来玩吧",
+    "address": "福州 鼓山",
+    "time": "2019-08-29 14:30",
+    "imageList": [
+      {
+        "imageid": 1,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      },
+      {
+        "imageid": 2,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      },
+      {
+        "imageid": 3,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      },
+      {
+        "imageid": 4,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      },
+      {
+        "imageid": 5,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      },
+      {
+        "imageid": 6,
+        "imagetitle": "鼓山",
+        "imgUrl": "/static/images/dt.png"
+      }
+    ]
+  }
+]

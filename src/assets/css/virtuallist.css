@@ -1,0 +1,53 @@
+.virtual {
+}
+.virtual .culture {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0 1rem 0 0;
+}
+.virtual .culture .culture-item {
+  text-align: center;
+  min-width: 76px;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  z-index: 100;
+  background-color: white;
+}
+.virtual .culture .culture-item.culture-itemactived {
+  color: #1989fa;
+  border-bottom: 0.1rem solid #1989fa;
+  font-size: 0.9rem;
+}
+.virtual .list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem 0 1rem;
+  justify-content: space-between;
+}
+.virtual .list .virtual-item {
+  /* padding-top: 35px; */
+  width: 48%;
+  margin: 0.5rem 0 0.8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.virtual .list .virtual-item img {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px #ccc;
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+}
+.virtual .list .virtual-item p {
+  margin-top: 0.5rem;
+  border: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.virtual ._v-container {
+  top: 7rem !important;
+}
+.virtual ._v-container > ._v-content {
+}

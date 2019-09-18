@@ -1,0 +1,44 @@
+{
+  "userid": 1,
+  "username": "严辉YanH",
+  "avt": "/static/images/0.jpg",
+  "bg":"/static/images/bg2.png",
+  "postcount":100,
+  "fanscount":100,
+  "guanzhucount":300,
+  "zhengshucount":200,
+  "postList":[
+    {
+      "imageid": 1,
+      "imagetitle": " 高盖山",
+      "imgUrl": "/static/images/dt.png"
+    },
+    {
+      "imageid": 2,
+      "imagetitle": " 高盖山",
+      "imgUrl": "/static/images/dt.png"
+    },
+    {
+      "imageid": 3,
+      "imagetitle": " 高盖山",
+      "imgUrl": "/static/images/dt.png"
+    }
+  ],
+  "zhengshuList":[
+	  {
+      "imageid": 1,
+      "imagetitle": "证书",
+      "imgUrl": "/static/images/zs.png"
+    },
+    {
+      "imageid": 2,
+      "imagetitle": "证书",
+      "imgUrl": "/static/images/zs.png"
+    },
+    {
+      "imageid": 3,
+      "imagetitle": "证书",
+      "imgUrl": "/static/images/zs.png"
+    }
+  ]
+}

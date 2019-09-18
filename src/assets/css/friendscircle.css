@@ -1,0 +1,70 @@
+.friendscircle>.header-tab {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+
+.friendscircle>.header-tab>.tab-item {
+  padding-top: 1rem;
+  text-align: center;
+  width: 25%;
+  float: left;
+  background-color: white;
+  z-index: 100;
+}
+
+.friendscircle>.header-tab>.tab-item.tab-itemactived {
+  color: #1989fa;
+}
+
+.friendscircle>.header-tab>.tab-item>.tab-spa {
+  width: 61px;
+  height: 29px;
+  background-color: #1989fa;
+  border-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  color: #ffffff;
+  position: relative;
+  top: -0.3rem;
+  left: 1rem;
+}
+
+.friendscircle>.header-tab>.tab-item>.tab-spa>.tab-txt {
+  top: 0.5rem !important;
+  left: 0.9rem !important;
+  position: absolute;
+}
+
+.friendscircle .list .list-item .content .imagecontainer .img-wrap {
+  justify-content: left;
+}
+.friendscircle .list .list-item .content .imagecontainer .img-wrap .list-img {
+  height: 6.5rem;
+}
+
+
+
+
+.friendscircle ._v-container {
+  top: 2.5rem !important;
+}
+
+.friendscircle ._v-container>._v-content>.loading-layer {
+  position: absolute !important;
+  bottom: 5.5rem !important;
+}
+
+.friendscircle ._v-container ._v-content {
+  padding-bottom: 5rem !important;
+  position: relative !important;
+}
+
+.friendscircle ._v-container ._v-content .loading-layer .no-data-text {
+  /* top: 170px; */
+}
+
+.friendscircle ._v-container>._v-content>.loading-layer{
+  height: 0;
+}

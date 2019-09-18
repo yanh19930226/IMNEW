@@ -1,0 +1,145 @@
+/* html {
+    font-size: 300% !important;
+} */
+
+.personalinfo>header {
+    /* color: #666666; */
+    height: 6rem;
+    padding-left: .4rem;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+}
+
+.personalinfo>header>.user {
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    float: left;
+    line-height: 9rem;
+}
+.personalinfo header .user img{
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 10rem;
+}
+.personalinfo header .userinfo {
+    height: 2rem;
+    float: left;
+    width: 50%;
+    margin-left: .3rem;
+}
+.personalinfo header .userinfo p {
+    font-size: 0.9rem;
+}
+
+.personalinfo header .userinfo p:first-child {
+    font-size: .9rem;
+    padding-top: 2.1rem;
+    margin-bottom: 7px;
+}
+
+.personalinfo header .userinfo p:last-child span {
+    margin-left: 1rem;
+}
+
+.personalinfo header .right_icon {
+    float: left;
+    width: 21%;
+    line-height: 2rem;
+    text-align: right;
+    padding-right: 4%;
+    font-size: 1rem;
+    padding-top: 2rem;
+
+}
+
+.personalinfo header .right_icon p {
+    text-align: right;
+}
+
+.personalinfo aside {
+    /* margin-top: .2rem; */
+}
+
+.personalinfo aside ul {
+    font-size: .9rem;
+    line-height: .8rem;
+    color: #000;
+    /* margin: 0 .5rem !important; */
+}
+
+.personalinfo aside ul li {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.2rem 0;
+    position: relative;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+}
+.personalinfo aside ul li>div{
+  float: right;
+  margin-right: .4rem;
+}
+
+.personalinfo aside ul li> span {
+    margin: 0 1rem !important;
+}
+
+.personalinfo aside ul li>div span {
+    font-family: '微软雅黑';
+    font-weight: 410;
+    font-style: normal;
+    font-size: .9rem;
+    margin: 0 0rem !important;
+    color: #999999;
+    text-align: right;
+    line-height: 1rem;
+}
+.personalinfo aside ul li i{
+    float:right;
+    font-size: 1.6rem;
+    color: #999999;
+    margin: 0 1rem !important;
+    position: relative;
+    bottom: .43rem;
+}
+.personalinfo aside ul li .tagdiv {
+    line-height: 20px;
+    position: absolute;
+    margin: 0 2.3rem !important;
+    right: .6rem;
+    top: 0px;
+    width: 39px;
+    height: 20px;
+    background-color: rgba(249, 94, 90, 1);
+    border: none;
+    border-radius: 13px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    color: #FFFFFF;
+    top: 14px;
+    text-align: center;
+}
+
+.personalinfo aside ul li .dotdiv {
+    position: absolute;
+    right: .6rem;
+    top: 20px;
+    width: 10px;
+    margin: 0 2.3rem !important;
+    height: 10px;
+    background: inherit;
+    background-color: rgba(249, 94, 90, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+    box-shadow: none;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    border: none;
+}

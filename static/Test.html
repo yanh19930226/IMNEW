@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <button onclick="test()">测试</button>
+  <script>
+    function get() {
+      $.ajax({
+        url: "http://localhost:21021/api/services/app/BaseUserDate/GetPersonalInfo", //请求的url地址
+        dataType: "json", //返回格式为json
+        async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+        data: {
+          "userId": "value"
+        }, //参数值
+        type: "get", //请求方式
+        beforeSend: function () {
+          //请求前的处理
+          debugger;
+        },
+        success: function (req) {
+          //请求成功时处理
+          debugger;
+        },
+        complete: function () {
+          //请求完成的处理
+          debugger;
+        },
+        error: function () {
+          //请求出错处理
+          debugger;
+        }
+      });
+    }
+
+    //get();
+
+
+    function post() {
+      $.ajax({
+        url: "http://localhost:21021/api/services/app/BaseUserDate/Insert", //请求的url地址
+        dataType: "json", //返回格式为json
+        contentType: 'application/json',
+        async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+        data: JSON.stringify({
+          "username": "林辉1",
+          "avt": "林辉",
+          "mobile": "林辉",
+          "sex": "林辉"
+        }), //参数值
+        type: "post", //请求方式
+        beforeSend: function () {
+          //请求前的处理
+          debugger;
+        },
+        success: function (req) {
+          //请求成功时处理
+          debugger;
+        },
+        complete: function () {
+          //请求完成的处理
+          debugger;
+        },
+        error: function (a, b, c, d) {
+          //请求出错处理
+          debugger;
+        }
+      });
+    }
+
+    //post();
+
+    function Update() {
+      $.ajax({
+        url: "http://localhost:21021/api/services/app/BaseUserDate/Update", //请求的url地址
+        dataType: "json", //返回格式为json
+        contentType: 'application/json',
+        async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+        data: JSON.stringify({
+          "userid": "3c95feb4-ec64-414b-b18d-f3d8cc2fede7",
+          "username": "林辉12222",
+          "avt": "林辉1111",
+          "mobile": "林辉",
+          "sex": "林辉"
+        }), //参数值
+        type: "post", //请求方式
+        beforeSend: function () {
+          //请求前的处理
+          debugger;
+        },
+        success: function (req) {
+          //请求成功时处理
+          debugger;
+        },
+        complete: function () {
+          //请求完成的处理
+          debugger;
+        },
+        error: function (a, b, c, d) {
+          //请求出错处理
+          debugger;
+        }
+      });
+    }
+
+    //Update();
+
+  </script>
+
+  <input type="file" id="file1" />
+  <input type="file" id="file2" />
+  <input type="button" value="upload File" onclick="uploadFile()" />
+  <script>
+    function test() {
+      alert("测试");
+      window.location.href="http://localhost:8081/sort?uid=1";
+    };
+
+    function uploadFile() {
+      debugger;
+      var file1 = document.getElementById("file1").files[0];
+      var file2 = document.getElementById("file2").files[0];
+
+      var formData = new FormData();
+      formData.append('file1', file1);
+      formData.append('file2', file2);
+
+      $.ajax({
+        url: "http://localhost:21021/api/services/app/BaseFile/Upload",
+        type: "post",
+        data: formData,
+        contentType: false,
+        processData: false,
+        mimeType: "multipart/form-data",
+        success: function (data) {
+          debugger;
+          console.log(data);
+        },
+        error: function (data) {
+          debugger;
+          console.log(data);
+        }
+      });
+    }
+
+  </script>
+</body>
+
+</html>

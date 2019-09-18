@@ -1,0 +1,104 @@
+/* html {
+    font-size: 300% ;
+} */
+.personalinfoedit>aside {
+   
+}
+
+.personalinfoedit>aside>ul {
+    font-size: .9rem;
+    line-height: 1rem;
+    color: #000;
+}
+.personalinfoedit>aside>ul>li {
+    background: #fff;
+    padding: 1.1rem;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(228, 228, 228, 1) !important;
+}
+.personalinfoedit>aside>ul>li:first-child{
+    padding: .6rem 1.1rem;
+} 
+.personalinfoedit>aside>ul>li>span {
+    font-family: '微软雅黑';
+    font-weight: 410;
+    font-style: normal;
+    font-size: .9rem;
+    color: #999999;
+}
+.personalinfoedit>aside>ul>li>.title {
+    font-size: .9rem;
+    line-height: .8rem;
+    color: #000;
+}
+/* .personalinfoedit>aside>ul>li p {
+    font-size: .9rem;
+    line-height: .8rem;
+    color: #000;
+} */
+
+.personalinfoedit>aside>ul>li>.avt {}
+
+.personalinfoedit>aside>ul>li>.left-content {
+    flex-basis: 83%;
+    text-align: right;
+    position: relative;
+}
+
+.personalinfoedit>aside>ul>li>.left-content>i {
+    font-size: 1.8rem;
+    color: #999999;
+    position: absolute;
+    right: 0;
+    top: -0.4rem;
+}
+
+.personalinfoedit>aside>ul>:first-child>.left-content>i {
+    top: 1rem;
+}
+
+.personalinfoedit>aside>ul>li>.left-content>img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    margin-right: .4rem;
+}
+
+.personalinfoedit>aside>ul>li>.left-content>input {
+    text-align: right;
+    border: none;
+    font-family: '微软雅黑';
+    font-weight: 410;
+    font-style: normal;
+    font-size: .9rem;
+    color: #999999;
+    margin-right: 1rem;
+}
+.personalinfoedit>aside>ul>li>.left-content>p{
+    margin-right: 1rem;
+}
+.personalinfoedit>aside>ul>li>.left-content>p,.personalinfoedit>aside>ul>li {
+    text-align: right;
+    border: none;
+    font-family: '微软雅黑';
+    font-weight: 410;
+    font-style: normal;
+    font-size: .9rem;
+    color: #999999;
+    /* margin-right: 1rem; */
+    
+}
+.personalinfoedit>aside>ul>li>.left-content>input.inputleftnone{
+    margin-right: 0;
+}
+.personalinfoedit>.info {
+    font-size: .9rem;
+    background-color: #ececee;
+    color: #777;
+    padding: 1.2rem 1.2rem;
+    line-height: 1.6rem;
+}

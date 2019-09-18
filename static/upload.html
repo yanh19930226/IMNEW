@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="file-box clearboth" id="fileBox">
+    <label class="clone-dom" style="display:none;">
+      <input type="file" class="file-btn" name="img[]" />
+    </label>
+    <div class="review-box"></div>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+    <label><input type="file" class="file-btn clone-dom" name="img[]" />
+    </label>
+  </div>
+</body>
+
+</html>
+<style>
+  #fileBox {
+    margin:
+      /*1*/
+      rem 0;
+  }
+
+  #fileBox label {
+    border: 1px solid #ccc;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    background: url(../img/images/images/xiang1_06.png) no-repeat center;
+    background-size: .19rem;
+    background-color: #ccc;
+    margin-left: .17rem;
+
+  }
+
+  #fileBox .file-btn {
+    height: 50px;
+    width: 50px;
+    margin: 0 .5rem .5rem 0;
+    opacity: 0;
+  }
+
+  #fileBox .review-box {
+    display: block;
+    float: left;
+    margin-left: .17rem;
+  }
+
+  #fileBox .review-box img {
+    height: 60px;
+    width: 60px;
+    margin: 0 .1rem .2rem 0;
+  }
+
+  #fileBox .prev-item {
+    position: relative;
+    display: inline-block;
+  }
+
+  #fileBox .prev-item .closebtn {
+    position: absolute;
+    right: -1px;
+    top: -4px;
+    display: block;
+    height: 14px;
+    width: 14px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    background: red;
+    border-radius: 10px;
+  }
+
+  #fileBox .prev-item .closebtn {
+    position: absolute;
+    right: 7px;
+    top: -4px;
+    display: block;
+    height: 14px;
+    width: 14px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    background: #8E8E93;
+    border-radius: 10px;
+  }
+
+</style>

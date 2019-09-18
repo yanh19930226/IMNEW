@@ -1,0 +1,162 @@
+/* .main {} */
+
+.list {}
+
+.list .list-item {
+  padding-top: 1rem;
+  position: relative;
+  clear: both;
+}
+
+.list .list-item .avt {
+  top: 1rem;
+  left: 1.3rem;
+  border-radius: 53px;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+}
+
+.list .list-item .guanzhu {
+  position: absolute;
+  left: 1.2rem;
+  top: 4.5rem;
+  width: 3rem;
+  line-height: 20px;
+  height: 20px;
+  background: inherit;
+  background-color: rgba(255, 255, 255, 1);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 153, 204, 1);
+  border-radius: 90px;
+  font-size: 12px;
+  color: #24A7D3;
+  text-align: center;
+}
+
+.list .list-item .guanzhu p span {
+  font-family: 'Arial Normal', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: normal;
+}
+
+
+.list .list-item .content {
+  padding-left: 21%;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  border-bottom: 1px solid rgba(228, 228, 228, 1);
+}
+
+.list .list-item .content .user-name {
+  font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
+  font-weight: 700;
+  font-style: normal;
+  color: #004277;
+  padding-bottom: .4rem;
+}
+
+
+.list .list-item .content .imagecontainer {
+  overflow: hidden;
+}
+
+.list .list-item .content .imagecontainer p {
+  padding-bottom: .2rem;
+  line-height: 1.3rem;
+  font-size: 12px;
+  margin-right: 1.6rem;
+}
+
+.list .list-item .content .imagecontainer .img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list .list-item .content .imagecontainer .img-wrap .list-img {
+  width: 30%;
+  object-fit: cover;
+  padding-right: .3rem;
+  padding-bottom: .3rem;
+  vertical-align: middle;
+  /* height: 30%; */
+  height: 6.5rem;
+}
+
+.list .list-item .content .item-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-right: 1.6rem;
+}
+
+.list .list-item .content .item-info .flex-item {
+  padding: .8rem 0;
+  align-self: flex-end;
+}
+.list .list-item .content .item-info .flex-item.notime{
+  display: flex;
+}
+
+.list .list-item .content .item-info .flex-item p {
+  font-size: .8rem;
+}
+
+.list .list-item .content .item-info .flex-item .address {
+  color: #004277;
+  clear: both;
+  padding-bottom: .4rem;
+}
+
+.list .list-item .content .item-info .flex-item .time {
+  color: black;
+}
+
+.list .list-item .content .item-info .flex-item .c-iconcontent-love {
+  margin-right: 1rem;
+}
+
+.list .list-item .content .item-info .flex-item .c-iconcontent {
+  /* float: right; */
+}
+
+.list .list-item .content .item-info .flex-item .c-iconcontent .c-icon {
+  width: 1rem;
+}
+
+
+.list .list-item .content .pinlun {
+  font-size: .8rem;
+  background-color: #eee;
+  clear: both;
+  margin-right: .6rem;
+  margin-bottom: 1rem;
+}
+
+.list .list-item .content .pinlun .like {
+  color: #576b95;
+  padding: 5px 5px 3px 5px;
+}
+
+.list .list-item .content .pinlun .like img {
+  width: 12px;
+  padding-right: 5px;
+}
+
+.list .list-item .content .pinlun .pinlun-list {
+  padding: 0px 5px;
+  color: #454545;
+}
+
+.list .list-item .content .pinlun .pinlun-list p {
+  padding: .2rem 0;
+}
+
+.list .list-item .content .pinlun .pinlun-list span {
+  color: #3b5384;
+}
