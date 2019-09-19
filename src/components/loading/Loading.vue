@@ -1,4 +1,5 @@
 <template>
+  <!-- <van-loading type="spinner" /> -->
   <div class="zns-loading">
     <div class="zns-loading-inner">
       <div class="ball-spin-fade-loader">

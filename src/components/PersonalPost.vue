@@ -75,6 +75,7 @@ export default {
   },
   mounted() {
     //注释
+    
     this.userInfo.userid = "c3a22fbf-9858-4f5b-9e03-af7429e5196a";
     this.fetchUserInfo(this.userInfo.userid);
     this.fetchdata(this.userInfo.userid);

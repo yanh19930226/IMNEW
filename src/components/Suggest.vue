@@ -9,18 +9,44 @@
         autosize
       />
     </van-cell-group>
-    <van-button type="info">提交反馈</van-button>
+    <van-button type="info" @click="submit">提交反馈</van-button>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      message: ""
+    };
+  },
+  mounted() {},
+  methods: {
+    submit() {
+      var _this = this;
+      this.$http
+        .post("", {
+          params: {
+          
+          }
+        })
+        .then(function(res) {
+         
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
+    }
+  },
+  watch: {},
+  components: {}
+};
 </script>
 <style scoped>
 .suggest {
   text-align: center;
 }
-.suggest .van-cell{
- padding:1.4rem;
+.suggest .van-cell {
+  padding: 1.4rem;
 }
 .suggest .van-button {
   width: 90%;

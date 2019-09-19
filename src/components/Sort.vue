@@ -92,6 +92,9 @@ export default {
       finished: false
     };
   },
+  mounted(){
+   
+  },
   methods: {
     onLoad() {
       // 异步更新数据

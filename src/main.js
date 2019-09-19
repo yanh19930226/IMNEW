@@ -13,15 +13,13 @@ import _ from 'lodash'
 import preview from "vue-photo-preview";
 import "vue-photo-preview/dist/skin.css";
 
+//ui组件
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
-
+//工具
 import utils from './utils' //获取url参数
 Vue.prototype.$utils = utils //注册全局方法
-// import moment from 'moment' //导入文件
-// Vue.prototype.$moment = moment; //赋值使用
-// moment.locale('zh-cn'); //需要汉化
 
 
 Vue.use(Vant);
@@ -55,7 +53,7 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 //配置全局访问路径
-axios.defaults.baseURL = 'https://wisdom-scenic-api.whlyw.net/api/services/app'
+// axios.defaults.baseURL = 'https://wisdom-scenic-api.whlyw.net/api/services/app'
 //其他页面在使用axios的时候直接  this.$http就可以了
 Vue.prototype.$http = axios
 const router = new VueRouter({
@@ -72,10 +70,24 @@ Vue.prototype.$app = {
 };
 // 路由拦截
 router.beforeEach((to, from, next) => {
-  // userid lng lat 
+  if (to.path === "/visited") {
+    let ralate = {
+      userId: utils.getUrlKey("userId"),
+      lng: utils.getUrlKey("lng"),
+      lat: utils.getUrlKey("lat")
+    };
+    //清空
+    sessionStorage.clear();
+    sessionStorage.setItem("ralate", JSON.stringify(ralate));
+  }
   //判断是否有userid等相关信息 
-  if (!sessionStorage.getItem("userId")) {
-    sessionStorage.setItem("userId", utils.getUrlKey("userId"));
+  if (sessionStorage.getItem("ralate") == null) {
+    let ralate = {
+      userId: utils.getUrlKey("userId"),
+      lng: utils.getUrlKey("lng"),
+      lat: utils.getUrlKey("lat")
+    };
+    sessionStorage.setItem("ralate", JSON.stringify(ralate));
   }
   //设置document.title
   if (to.meta.title) {

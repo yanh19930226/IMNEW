@@ -34,8 +34,8 @@
           :key="index"
           @click="virtualdetailpoup(item)"
         >
-          <!-- <img v-if="item.imgUrl" :src="item.imgUrl" /> -->
-          <img  src="/static/images/xny.jpg" />
+          <img v-if="item.imgUrl" :src="item.imgUrl" />
+          <img v-else src="/static/images/xny.jpg" />
           <p v-text="item.virtualname"></p>
         </div>
       </div>

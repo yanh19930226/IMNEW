@@ -10,6 +10,7 @@
 
 <body>
   <button onclick="test()">测试</button>
+  <button onclick="test2()">测试2</button>
   <script>
     function get() {
       $.ajax({
@@ -118,10 +119,12 @@
   <input type="button" value="upload File" onclick="uploadFile()" />
   <script>
     function test() {
-      alert("测试");
-      window.location.href="http://localhost:8081/sort?uid=1";
+      window.location.href="http://localhost:8081/sort?userId=1";
     };
 
+    function test2() {
+      window.location.href="http://localhost:8081/visited?userId=1&lng=112&lat=333";
+    };
     function uploadFile() {
       debugger;
       var file1 = document.getElementById("file1").files[0];

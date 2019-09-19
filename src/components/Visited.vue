@@ -46,7 +46,8 @@
       </div>
       <div class="bottom-container">
         <div class="bottom-info-left">
-          <img src="/static/images/qrcode.png" />
+          <div id="qrcode" ref="qrcode" class="qrcodeimage"></div>
+          <!-- <img src="/static/images/qrcode.png" /> -->
           <span>扫扫或长按,了解详情</span>
         </div>
         <div class="bottom-info-right">
@@ -54,24 +55,24 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 <script>
 require("../assets/css/visited.css");
+import QRCode from "qrcodejs2";
 export default {
   data() {
     return {
       fjqname: "石竹山风景区",
-      dksj:new Date(),
-      userInfo: {}
+      dksj: new Date(),
+      userInfo: {},
+      scenic: {}
     };
   },
   mounted() {
-    // let userId = this..$route.params.userid;
-    this.fjqname = "石竹山";
-    let jqid = "";
-    let userId = "c3a22fbf-9858-4f5b-9e03-af7429e5196a";
-    this.fetchdata(userId);
+    this.fetchdata(JSON.parse(sessionStorage.getItem("ralate")).userId);
+    this.fetchscenic(JSON.parse(sessionStorage.getItem("ralate")).lng,JSON.parse(sessionStorage.getItem("ralate")).lat);
   },
   methods: {
     fetchdata(userId) {
@@ -84,10 +85,40 @@ export default {
         })
         .then(function(res) {
           _this.userInfo = res.data.result[0];
+          _this.qrCode("http://www.runoob.com");
         })
         .catch(function(err) {
           console.log(err);
         });
+    },
+    fetchscenic(lng, lat) {
+      var _this = this;
+      this.$http
+        .get("/BaseScenic/GetScenicByPoint", {
+          params: {
+            lng: lng,
+            lat: lat
+          }
+        })
+        .then(function(res) {
+          _this.scenic = res.data.result[0];
+          // _this.qrCode("http://wisdom-scenic.whlyw.net/viewPanorama?lat="+lat+"&lng="+lng);
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
+    },
+    qrCode(url) {
+      let qrcode = new QRCode("qrcode", {
+        width: 150, //图像宽度
+        height: 150, //图像高度
+        colorDark: "#000000", //前景色
+        colorLight: "#ffffff", //背景色
+        typeNumber: 4,
+        correctLevel: QRCode.CorrectLevel.H //容错级别 容错级别有：（1）QRCode.CorrectLevel.L （2）QRCode.CorrectLevel.M （3）QRCode.CorrectLevel.Q （4）QRCode.CorrectLevel.H
+      });
+      qrcode.clear(); //清除二维码
+      qrcode.makeCode(url); //生成另一个新的二维码
     }
   },
   watch: {},
@@ -227,5 +258,10 @@ export default {
 .container > .bottom > .bottom-container > .bottom-info-right > p {
   position: absolute;
   bottom: 0;
+}
+
+
+.container .qrcodeimage img{
+   width: 3rem;
 }
 </style>
